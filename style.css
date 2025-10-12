@@ -1,0 +1,50 @@
+
+
+.more-space {
+  margin-bottom: 20%;
+}
+
+header h1 {
+  /* color: #34262B; */
+  font-size: 100px;
+}
+
+h1 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+.break1, .break2, .contact h2, .contact h3, p, header h4 {
+  font-family: "Coming Soon", sans-serif;
+}
+
+.social-media {
+  margin-top: 7%;
+}
+
+.intro {
+  margin-top: 12%;
+}
+
+header h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.red {
+  color: #c1292e;
+  font-weight: bold;
+}
+/**Navbar customs**/
+:root {
+  --steps: 16;
+  --background: #1d1f20;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: var(--background);
+}
+

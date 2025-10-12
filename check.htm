@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Typing Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Coming+Soon|Inconsolata">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="more-space row">
+        <div class="col-md-12 text-center intro">
+          <h1 class="typing" id="typeText">Hello there</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    // List of text messages to display
+    const messages = [ "Some people leave, but their memories don’t fade"];
+    let index = 0;
+    const typeText = document.getElementById('typeText');
+
+    setInterval(() => {
+      // Fade out animation (optional)
+      typeText.style.opacity = 0;
+
+      setTimeout(() => {
+        index = (index + 1) % messages.length;
+        typeText.textContent = messages[index];
+        typeText.style.opacity = 1;
+      }, ); // Wait for fade out before switching text
+    }, 2000); // Change text every 5 seconds
+  </script>
+
+</body>
+</html>
